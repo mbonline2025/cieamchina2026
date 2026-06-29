@@ -1,0 +1,24 @@
+# 🖼️ Referências de Mídia - URLs CDN Atuais
+
+## Hero Section Background
+https://d2xsxph8kpxj0f.cloudfront.net/310519663598406223/iNniAdMAKZ3kbfss6mvqm6/hero-asia-mission-T5vtH4Ewby8ZwFx7dDK2rB.webp
+
+## Logo (Footer)
+https://d2xsxph8kpxj0f.cloudfront.net/310519663598406223/iNniAdMAKZ3kbfss6mvqm6/bridge-icon-5BLCtSSJPpFzPjJUP6CKFy.webp
+
+## Local Media (Public Folder)
+- /logos/cieam.png
+- /images/cities/guangzhou.webp
+- /images/cities/shanghai.png
+- /images/cities/tokyo.jpg
+
+## Para Migrar para Local
+
+Edite os componentes que usam CDN e substitua pelas URLs locais:
+- HeroSection.tsx: backgroundImage
+- Footer.tsx: logo img src
+- CitiesSection.tsx: city images
+
+Exemplo:
+FROM: https://d2xsxph8kpxj0f.cloudfront.net/.../hero-asia-mission-T5vtH4Ewby8ZwFx7dDK2rB.webp
+TO:   /images/hero/asia-mission.webp
